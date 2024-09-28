@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import { FaGithub } from "react-icons/fa";
 
 interface ProjectCardProps {
   project: {
@@ -79,22 +80,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           >
             Read More
           </button>
-          <a
-            href={project.githubLink}
-            target="_blank"
-            rel="noopener noreferrer"
+
+          <button
+            onClick={() => window.open(project.githubLink, "_blank")}
+            className="bg-gray-800 hover:bg-gray-700 text-white font-medium py-1 px-2 rounded-lg text-center"
           >
-            <i
-              title="GitHub Link"
-              className="fa-brands fa-github text-white text-xl transition-colors duration-300 hover:text-pink-400"
-            ></i>
-          </a>
-          <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-            <i
-              title="Live Link"
-              className="fa-solid fa-link text-white text-xl transition-colors duration-300 hover:text-pink-400"
-            ></i>
-          </a>
+            <FaGithub />
+          </button>
         </div>
       </div>
 
