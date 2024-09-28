@@ -57,7 +57,18 @@ const projectsData: Project[] = [
     githubLink: "https://github.com/HiAkshatJain/ECommerce",
     liveLink: "https://github.com/HiAkshatJain/ECommerce",
   },
-  // Add more projects as needed
+  {
+    id: "project3",
+    number: "03",
+    picture: "/tictac.png",
+    title: "Tic Tac Toe",
+    description:
+      "This project is a simple implementation of the classic Tic Tac Toe game using HTML, CSS, and JavaScript. It allows two players to play Tic Tac Toe against each other in a web browser.",
+    skills: ["HTML.png", "CSS.png", "Javascript.svg"],
+    position: "right",
+    githubLink: "https://github.com/HiAkshatJain/TicTacToe",
+    liveLink: "https://github.com/HiAkshatJain/TicTacToe",
+  },
 ];
 
 const ProjectSection: React.FC = () => {
